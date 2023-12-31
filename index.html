@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SciAstra Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ques">
+        <h3>Questions you can ask the bot</h3>
+        <ul>
+            <li>What services does SciAstra provide?</li>
+            <li>Courses offered by SciAstra</li>
+            <li>Tell me about SciAstra's team.</li>
+            <li>How can I contact SciAstra?</li>
+            <li>Selections by SciAstra</li>
+            <li>Can I buy SciAstra's merchandise</li>
+            <li>Is SciAstra recognized anywhere</li>
+            <li>Does SciAstra teach for Jee and Neet</li>
+            <li>Does SciAstra have a app</li>
+            <li>How many students have SciAstra taught?</li>
+            <li>How many got selected through SciAstra</li>
+            <li>Does SciAstra Provide Recorded Classes</li>
+        </ul>
+    </div>
+    <div class="chatbot">
+        <div class="chat-header">
+            <h2>SciAstra Chatbot</h2>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <p><img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="">Hello! How can I help you today?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message..." onkeypress="sendMessage(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
