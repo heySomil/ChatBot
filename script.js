@@ -11,7 +11,7 @@ function toggleChatbot() {
 }
 
 function sendMessage(event) {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter' || event.type === 'click') {
         var userInput = document.getElementById('userInput').value;
         var chatBody = document.getElementById('chatBody');
 

@@ -38,9 +38,12 @@
         </div>
         <div class="chat-input">
             <input type="text" id="userInput" placeholder="Type your message..." onkeypress="sendMessage(event)">
-            <button onclick="sendMessage()">Send</button>
+            <button id="sendButton">Send</button>
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('sendButton').addEventListener('click', sendMessage);
+    </script>
 </body>
 </html>
